@@ -14,5 +14,11 @@ jobs:
           npm -v
       - name: echo a string
         run: echo "Hello From Pluto"
+      - name: python command
+        run: |
+          import platform
+          print
+          (platform.processor())
+        shell: python
           
       
